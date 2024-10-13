@@ -22,7 +22,10 @@
     <div id="myExplorer"></div>
     <div id="myToolbar"></div>
     <div id="myInspector"></div>
-    <input type="file" value="select ifc"/>
+    <label for="resultFileSelector" v-show="!taskContent.resultDisabled">
+        <input id="resultFileSelector" type="file"  onclick="console.log('hello')">
+                           Select ifc file
+    </label>
     <div id="myViewer">
         <canvas id="myCanvas"></canvas>
         <canvas id="myNavCubeCanvas"></canvas>
